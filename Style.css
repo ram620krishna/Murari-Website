@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --container-height: 59px;
+}
+.logo{
+    margin: 10px 34px;
+}
+.logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+}
+.container ul{
+    display: flex;
+}
+
+.container::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.container ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.container ul li a{
+   display: block;
+   color: aliceblue;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.container ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+ }
+
+ .home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .home::before{
+    content: "";
+    background:url('/japanese-japan-restaurant-culture.jpg') no-repeat center center/cover;
+    position: absolute;
+    filter: blur(2px);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;  
+    z-index: -1;
+    opacity: 0.89;
+ }
+
+ .home h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+ }
+
+ .home p{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+ }
+
+             /* Services section */
+
+ .services{
+    margin: 34px;
+    display: flex;
+ }
+
+ .services .box{
+    border: 2px solid brown;
+    padding: 18px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+ }
+
+ .services .box img{
+    height: 156px;
+    margin: auto;
+    display: flex;
+ }
+
+         /* Contact Section */
+
+ #contact{
+    position: relative;
+ }
+ #contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/contact.jfif') no-repeat center center/cover;
+ }
+
+ #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+ }
+
+ #contact-box form{
+    width: 40%;
+ }
+
+ #contact-box label{
+    font-size: 1.3rem;
+ }
+ #contact-box input,
+ #contact-box textarea{
+   width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+ }
+           /* Footer */
+
+ footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+ }
+
+          /* Utlity classes */
+ .h_pramiry{
+    font-size: 3.8rem;
+    padding: 12px;
+ }
+
+ .h_pramiry{
+    font-size: 2.8rem;
+    padding: 12px;
+ }
+
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
+
+ #img1{
+    border-radius: 20px;
+ }
+
+ .btn:hover{
+    color: black;
+    background-color: blue; 
+ }
+
+ .box::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.15;
+ }
+
+ #btn{
+   padding: 10px;
+   margin: 5px;
+   height: 2.5rem;
+   background-color: rgb(0, 0, 255);
+   color: #f2f2f2;
+   font-weight: bold;
+   cursor: pointer;
+   
+ }
+
+ #btn:hover{
+   color: rgb(14, 10, 8);
+   background-color: rgba(0, 0, 255, 0.587);
+ }
